@@ -1,5 +1,3 @@
-html {}
-
 body {
 	font-family: 'Poppins', sans-serif;
 	display: flex;
@@ -41,9 +39,9 @@ body {
 	letter-spacing: 2px;
 }
 
-@keyframes slideInFromLeft {
+@keyframes slideInFromRight {
 	0% {
-		transform: translateX(-100%);
+		transform: translateX(100%);
 		opacity: 0;
 	}
 	100% {
@@ -52,24 +50,72 @@ body {
 	}
 }
 
-.main-content {
-	animation: 1.5s ease 0s 1 slideInFromLeft;
+.intro .main-content {
+	animation: 1.5s ease 0s 1 slideInFromRight;
 	flex: 1 0 auto;
 }
 
-.main-content .container h1 {
-	color: #515A5A;
+.intro {
+	background-color: #FBFBF2;
+	padding: 100px 0px;
+}
+
+.main-content h1 {
+	color: black;
 	font-weight: 700;
 	font-size: 3em;
 }
 
-.main-content .container h2 {
+.main-content h2 {
 	color: #515A5A;
 	font-weight: 400;
 	font-size: 1.25em;
 	padding-bottom: 1em;
 }
 
-.main-content .container p {
+.main-content p {
 	color: #515A5A;
+	max-width: 60%;
+	font-weight: 300;
+}
+
+.main-content h3 {
+	font-size: 0.75em;
+	letter-spacing: 2px;
+}
+
+.work {
+	background-color: #F2F3F5;
+	padding: 80px 0px;
+}
+
+li {
+	display: inline;
+	margin-right: 2em;
+}
+
+footer h1 {
+	font-weight: 300;
+	margin-bottom: 0.5em;
+}
+
+footer a {
+	font-size: 2em;
+}
+
+a:link {
+	color: azure;
+}
+
+a:hover {
+	background-color: pink;
+	color: #9FB8AD;
+}
+
+a:visited {
+	color: azure;
+}
+
+a:active {
+	color: #475841;
 }
