@@ -1,0 +1,19 @@
+{
+  "name": "marcusboay.github.io",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcusBoay/marcusboay.github.io.git"
+  },
+  "author": "Marcus Boay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcusBoay/marcusboay.github.io/issues"
+  },
+  "homepage": "https://github.com/MarcusBoay/marcusboay.github.io#readme"
+}

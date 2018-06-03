@@ -1,0 +1,75 @@
+html {}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.footer {
+	flex: 1;
+	background-color: #1D1D1D;
+	color: azure;
+}
+
+.background-image {
+	z-index: 1;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	right: 0;
+	background-image: url("../img/bg-img.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+}
+
+.navbar {
+	background-color: rgba(0,0,0, 0.8);
+}
+
+.navbar-item {
+	color: azure;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+@keyframes slideInFromLeft {
+	0% {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+.main-content {
+	animation: 1.5s ease 0s 1 slideInFromLeft;
+	flex: 1 0 auto;
+}
+
+.main-content .container h1 {
+	color: #515A5A;
+	font-weight: 700;
+	font-size: 3em;
+}
+
+.main-content .container h2 {
+	color: #515A5A;
+	font-weight: 400;
+	font-size: 1.25em;
+	padding-bottom: 1em;
+}
+
+.main-content .container p {
+	color: #515A5A;
+}
