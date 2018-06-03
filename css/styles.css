@@ -41,17 +41,20 @@ body {
 
 @keyframes slideInFromRight {
 	0% {
-		transform: translateX(100%);
+		transform: translateX(50%);
+		opacity: 0;
+	}
+	50% {
 		opacity: 0;
 	}
 	100% {
-		transform: translateX(0);
+		transform: translateX(0%);
 		opacity: 1;
 	}
 }
 
 .intro .main-content {
-	animation: 1.5s ease 0s 1 slideInFromRight;
+	animation: 1s ease 0s 1 slideInFromRight;
 	flex: 1 0 auto;
 }
 
