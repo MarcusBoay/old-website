@@ -92,9 +92,25 @@ body {
 
 .projects {
 	background-color: #F2F3F5;
-	padding-left: 65px;
+	position: relative;
+	z-index: 10;
 }
 
+.project .marker-left {
+    width: 5vw;
+    position: absolute;
+    top: 0;
+	bottom: 0;
+	transition: background-color 0.3s ease;
+}
+
+.project:hover .marker-left {
+	background-color: #9FB8AD;
+}
+
+.project .desc-container {
+	padding-left: 7vw;
+}
 .project .desc {
 	padding-top: 2em;
 	padding-bottom: 2em;
