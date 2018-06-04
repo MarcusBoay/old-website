@@ -3,6 +3,7 @@ body {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
+	overflow-x: hidden;
 }
 
 .footer {
@@ -96,7 +97,11 @@ body {
 	z-index: 10;
 }
 
-.project .marker-left {
+.project {
+	position: relative;
+}
+
+.project .marker-left, .project .marker-right {
     width: 5vw;
     position: absolute;
     top: 0;
@@ -104,13 +109,29 @@ body {
 	transition: background-color 0.3s ease;
 }
 
-.project:hover .marker-left {
+.project .marker-left {
+	left: 0;
+}
+
+.project .marker-right {
+	right: 0;
+}
+
+.project:hover .marker-left, .project:hover .marker-right {
 	background-color: #9FB8AD;
 }
 
-.project .desc-container {
+.project .desc-container-left {
 	padding-left: 7vw;
+	padding-bottom: 7rem;
+	position: relative;
 }
+
+.project .desc-container-right {
+	padding-right: 7vw;
+	padding-bottom: 7rem;
+}
+
 .project .desc {
 	padding-top: 2em;
 	padding-bottom: 2em;
@@ -146,7 +167,22 @@ body {
 
 .project img {
 	object-fit: cover;
-	max-height: 600px;
+	max-height: 800px;
+}
+
+.project ul {
+	position: absolute;
+	bottom: 1rem;
+	padding-left: 0;
+}
+
+.project .logo i {
+	font-size: 3em;
+	transition: font-size 0.2s ease;
+}
+
+.project .logo:hover i {
+	font-size: 3.5em;
 }
 
 @media screen and (max-width: 992px) {
@@ -154,9 +190,19 @@ body {
 		text-align: left;
 		padding-top: 0px;
 	}
+	
+	.project .desc-container-right, .project .desc-container-left {
+		padding-right: 7vw;
+		padding-left: 7vw;
+		padding-bottom: 7rem;
+	}
 
 	.project img {
 		max-height: 400px;
+	}
+
+	.project:hover .marker-left, .project:hover .marker-right {
+		background-color: transparent;
 	}
 }
 
@@ -209,4 +255,20 @@ a:visited {
 
 a:active, a.navbar-item:active {
 	color: #475841;
+}
+
+a.logo:link {
+	color: #515A5A;
+}
+
+a.logo:visited {
+	color: #515A5A;
+}
+
+a.logo:hover {
+	color: #515A5A;
+}
+
+a.logo:active {
+	color: #515A5A;
 }
