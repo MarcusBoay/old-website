@@ -3,7 +3,6 @@ body {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
-	overflow-x: hidden;
 }
 
 .footer {
@@ -32,6 +31,10 @@ body {
 
 .navbar {
 	background-color: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 11;
 }
 
 .navbar-item {
@@ -65,6 +68,7 @@ body {
 
 .intro {
 	background-color: #edfde0;
+	padding-top: calc(5rem + 56px);
 }
 
 .main-content h1 {
@@ -96,9 +100,9 @@ body {
 	max-height: 190px;
 	width: auto;
 	height: auto;
-    padding-left: 0;
-    padding-right: 0;
-    box-shadow: 1px 2px 10px;
+	padding-left: 0;
+	padding-right: 0;
+	box-shadow: 1px 2px 10px;
 }
 
 .projects {
@@ -113,9 +117,9 @@ body {
 }
 
 .project .marker-left, .project .marker-right {
-    width: 5vw;
-    position: absolute;
-    top: 0;
+	width: 5vw;
+	position: absolute;
+	top: 0;
 	bottom: 0;
 	transition: background-color 0.3s ease;
 }
@@ -141,6 +145,7 @@ body {
 .project .desc-container-right {
 	padding-right: 7vw;
 	padding-bottom: 7rem;
+	padding-left: 2vw;
 }
 
 .project .desc {
@@ -180,6 +185,7 @@ body {
 .project img {
 	object-fit: cover;
 	max-height: 800px;
+	padding: 0px;
 }
 
 .project ul {
@@ -202,17 +208,14 @@ body {
 		text-align: left;
 		padding-top: 0px;
 	}
-	
 	.project .desc-container-right, .project .desc-container-left {
 		padding-right: 7vw;
 		padding-left: 7vw;
 		padding-bottom: 7rem;
 	}
-
 	.project img {
 		max-height: 400px;
 	}
-
 	.project:hover .marker-left, .project:hover .marker-right {
 		background-color: transparent;
 	}
@@ -283,4 +286,8 @@ a.logo:hover {
 
 a.logo:active {
 	color: #515A5A;
+}
+
+.row {
+	margin-right: 0px;
 }
