@@ -15,9 +15,5 @@
   "bugs": {
     "url": "https://github.com/MarcusBoay/marcusboay.github.io/issues"
   },
-  "homepage": "https://github.com/MarcusBoay/marcusboay.github.io#readme",
-  "dependencies": {
-    "imagemin": "^6.1.0",
-    "imagemin-webp": "^5.0.0"
-  }
+  "homepage": "https://github.com/MarcusBoay/marcusboay.github.io#readme"
 }
